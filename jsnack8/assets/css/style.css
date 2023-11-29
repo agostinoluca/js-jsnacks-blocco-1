@@ -3,3 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #ededed;
+}
+
+.sum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: rgb(55, 0, 255);
+    text-align: center;
+    margin-top: 4rem;
+    text-shadow: 0.5rem 0.5rem 1rem black;
+    font-weight: 500;
+}
