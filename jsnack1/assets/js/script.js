@@ -63,25 +63,19 @@ const carList = [
     }
 ];
 
-const benzinaArray = carList.filter(alimentazioneBenzina);
-
-function alimentazioneBenzina(car) {
+const benzinaArray = carList.filter(function(car) {
     return car.alimentazione === 'benzina';
-};
+});
 console.log(benzinaArray);
 
 
-const dieselArray = carList.filter(alimentazioneDiesel);
-
-function alimentazioneDiesel(car) {
+const dieselArray = carList.filter(car => {
     return car.alimentazione === 'diesel';
-};
+});
 console.log(dieselArray);
 
 
-const varieAlimentazioniArray = carList.filter(varieAlimentazioni);
-
-function varieAlimentazioni(car) {
-    return car.alimentazione != 'benzina' && car.alimentazione != 'diesel';
-};
+const varieAlimentazioniArray = carList.filter(car => {
+    return car.alimentazione !== 'benzina' && car.alimentazione !== 'diesel';
+});
 console.log(varieAlimentazioniArray);
