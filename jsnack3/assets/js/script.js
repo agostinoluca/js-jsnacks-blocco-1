@@ -57,6 +57,9 @@ const animalsList = [
   ]
 
 // con un ciclo itero la lista
+animalsList.forEach(animal => {
+    console.log(animal.classe);    
+});
 
 // con una condizione seleziono gli oggetti che come classe hanno "mammiferi"
 
