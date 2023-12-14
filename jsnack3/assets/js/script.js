@@ -10,8 +10,6 @@ Es:
 Crea un nuovo array con la lista dei mammiferi.
 */
 
-console.log('Hello World');
-
 // creo un'array di oggetti
 const animalsList = [
     { 
@@ -54,7 +52,10 @@ const animalsList = [
         famiglia: 'felidi', 
         classe: 'mammiferi' 
     }
-  ]
+];
+
+
+/* Soluzione utilizzata durante esercitazione
 
 // creo una nuova array vuota per i mammiferi
 let mammiferi = [];
@@ -70,5 +71,10 @@ animalsList.forEach(animal => {
     }
 });
 
+*/
 
 
+
+// soluzione con metodo .filter (correzione)
+const mammiferi = animalsList.filter(animal => animal.classe === 'mammiferi');
+console.log(mammiferi);
