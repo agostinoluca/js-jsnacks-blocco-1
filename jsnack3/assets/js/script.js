@@ -56,11 +56,19 @@ const animalsList = [
     }
   ]
 
+// creo una nuova array vuota per i mammiferi
+let mammiferi = [];
+
 // con un ciclo itero la lista
 animalsList.forEach(animal => {
     console.log(animal.classe);    
+    // con una condizione seleziono gli oggetti che come classe hanno "mammiferi"
+    if (animal.classe === 'mammiferi') {
+        // pusho dentro una nuova lista gli oggetti selezionati
+        mammiferi.push(animal);
+        console.log(mammiferi);
+    }
 });
 
-// con una condizione seleziono gli oggetti che come classe hanno "mammiferi"
 
-// pusho dentro una nuova lista gli oggetti selezionati
+
